@@ -1,0 +1,36 @@
+.rectangle {
+    width: 293px;
+    height: 258px;
+    position: relative;
+    border-radius: 60px 30px;
+    img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // transform:  translateX(-10%);
+        width: 100%;
+    }
+    @include bp(tablet-portrait-down) {
+        width: 100%;
+        margin-bottom: 30px;
+        height: 170px;
+        img {
+            width: 233px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &.rectangle-1 {
+        background: linear-gradient(127.79deg, #a0eeff 0%, #9b99ff 100%);
+    }
+    &.rectangle-2 {
+        background: linear-gradient(232.21deg, #FFE5A0 0%, #CCFF99 100%);
+    }
+    &.rectangle-3 {
+        background: linear-gradient(127.79deg, #FFD029 0%, #FF6868 100%);
+    }
+    &.rectangle-4 {
+        background: linear-gradient(127.79deg, #BFA0FF 0%, #FF9999 100%);
+    }
+}
