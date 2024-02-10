@@ -1,9 +1,0 @@
-@media only screen and (min-width: 768px) {
-	header .header-bottom .row .col-md-3 {
-		width: 280px !important;
-	}
-	header .header-bottom .row .card img{
-		width: 68px !important;
-		height: 62px !important;
-	}
-}
