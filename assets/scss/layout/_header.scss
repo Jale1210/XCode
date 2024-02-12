@@ -1,0 +1,113 @@
+header {
+    padding: 80px 0;
+    .header-top {
+        h1 {
+            font-size: 50px;
+            font-weight: 300;
+            line-height: 140%;
+            color: #333333;
+            @include bp(tablet-portrait-down) {
+                font-size: 28px;
+            }
+            b {
+                font-size: 40px;
+                font-weight: 800;
+                line-height: 140%;
+
+                @include bp(tablet-portrait-down) {
+                    font-size: 26px;
+                }
+                @include bp(xs-phone-only) {
+                    font-size: 25px;
+                    img {
+                        width: 23px;
+                    }
+                }
+            }
+        }
+        a.btn {
+            width: 150px;
+            margin-top: 30px;
+            @include bp(tablet-portrait-down) {
+                display: none;
+            }
+        }
+    }
+    .header-bottom {
+        margin-top: 100px;
+        @include bp(tablet-portrait-down) {
+            margin-top: 50px;
+        }
+        .row {
+            column-gap: 50px;
+            row-gap: 30px;
+            @include bp(xs-phone-only) {
+                column-gap: 20px;
+            }
+            .col-xs-5 {
+                @include bp(tablet-portrait-down) {
+                    width: 170px;
+                }
+            }
+            .col-xs-4 {
+                @include bp(tablet-portrait-down) {
+                    width: 100px;
+                }
+            }
+            .col-md-3 {
+                width: 300px;
+            }
+            .card {
+                padding: 30px;
+                box-shadow: 0px 10px 20px rgba(74, 74, 74, 0.1);
+                border-radius: 30px;
+                column-gap: 30px;
+                p {
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: #00b3db;
+                    margin-bottom: 5px;
+                }
+                span {
+                    font-size: 16px;
+                    color: #333333;
+                }
+                @include bp(tablet-portrait-down) {
+                    background-color: transparent !important;
+                    box-shadow: none;
+                    height: 50px;
+                    padding: 0;
+                    column-gap: 10px;
+                    img {
+                        height: 34px;
+                    }
+                    p {
+                        font-size: 24px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .header-hero-lg {
+        @include bp(tablet-portrait-down) {
+            display: none;
+        }
+    }
+    .header-hero-mb {
+        display: none;
+        @include bp(tablet-portrait-down) {
+            display: block;
+            img {
+                width: 150px;
+            }
+        }
+        @include bp(xs-phone-only) {
+            img {
+                width: 120px;
+            }
+        }
+    }
+}

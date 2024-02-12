@@ -1,0 +1,30 @@
+button,
+.btn {
+    box-shadow: none !important;
+}
+.btn-outline-primary {
+    border-color: #00b3db;
+    border-radius: 10px;
+    border-width: 2px;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #00b3db;
+        color: #ffffff !important;
+        border-color: #00b3db;
+    }
+}
+.btn-primary {
+    border-color: #00b3db;
+    background-color: #00b3db;
+    border-radius: 10px;
+    border-width: 2px;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: transparent;
+        border-color: #00b3db;
+        color: #00b3db !important;
+        border-color: #00b3db;
+    }
+}
