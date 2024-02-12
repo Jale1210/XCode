@@ -359,7 +359,7 @@ button,
     .mobile-partners-img {
         display: block !important;
         position: absolute !important;
-        top:33% !important;
+        /*top:33% !important;*/
         /*top: 50px !important;*/
         z-index: 999 !important;
         right: 50px !important;
